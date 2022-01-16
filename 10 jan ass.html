@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <title>Box Modeliing</title>
+</head>
+<style>
+    body{
+    margin: 20px;
+}
+header{
+    background-color: rgb(154, 207, 6);
+    height: 60px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-flow: row;
+}
+.content{
+    background-color: rgb(19, 156, 219);
+    height: 150px;
+    width: 30%;
+    text-align: center;
+}
+.center{
+    background-color: rgb(9, 240, 221);
+    height: 150px;
+}
+.data{
+    background-color: rgb(64, 9, 194);
+    height: 150px;
+    width: 30%;
+    text-align: center;
+}
+@media (max-width:600px){
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .content{
+        background-color: rgb(211, 191, 13);
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .center{
+        background-color: rgb(14, 190, 138);
+        height: 200px;
+        order: 1;
+        overflow: scroll;
+    }
+    .data{
+        background-color: rgb(235, 130, 11);
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+}
+@media (max-width:800px){
+    .flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .content{
+        background-color: rgb(218, 14, 156);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 2;
+    }
+    .center{
+        background-color: rgb(9, 240, 221);
+        height: 200px;
+        order: 1;
+    }
+    .data{
+        background-color: rgb(82, 14, 240);
+        height: 50px;
+        width: 50%;
+        text-align: center;
+        order: 3;
+    }
+}
+footer{
+    margin-top: -19px;
+    background-color: rgba(14, 226, 32, 0.856);
+    height: 50px;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <h2>header </h2>
+       
+    </header>
+    <section class="flex">
+    <aside class="content">
+        <h3>Introduction</h3>
+    </aside>
+    <main class="center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, temporibus ut! Ratione quae libero odio earum excepturi distinctio facilis. Nam alias deleniti aliquam. Sunt debitis accusantium nulla, itaque eos odit sequi velit ratione labore at, recusandae officiis praesentium numquam, nemo consectetur. Voluptas quam quia autem aperiam aut quisquam distinctio, voluptates nesciunt eius, nihil ab deserunt maiores eveniet vero quaerat dolor maxime dolorem iste necessitatibus, architecto magnam! Expedita iste culpa ad dolores ratione natus cupiditate accusamus doloremque sed, odio voluptatibus at rem repellat, quo hic sint amet. Dolore alias sequi ea dignissimos numquam illum accusantium nulla error? Sunt cum rem, architecto quibusdam explicabo et vero obcaecati eos magnam eaque, voluptatibus quos dolorem quis nulla quaerat accusamus dolor pariatur vel itaque quisquam quae optio nam! Nam doloribus totam quasi itaqu</p>
+    </main>
+    <aside class="data">
+        <h3>Summary of this para</h3>
+    </aside>
+    </section>
+    <footer>
+        <section>
+            <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque provinam aliquid perspiciatis quas nisi.</b></p>
+        </section>
+    </footer>    
+</body>
+</html>
